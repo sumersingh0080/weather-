@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+   <link rel="stylesheet" href="output.css">
+</head>
+<body class=" bg-white">
+   
+    <header class="bg-blue-900 h-16 text-center content-center font-bold text-white text-2xl">Weather Dasboard</header>
+
+    <div class=" bg-black h-auto p-8  w-screen space-y-5 text-xl   sm:flex sm:space-x-7 sm:space-y-5">
+
+        <!-- left box -->
+
+        <div class="left flex flex-col w-full  h-64 pb-1 justify-between text-white  sm:w-2/6">
+            <label class="label font-bold text-white" for="city">Enter a city name</label>
+            <input class="city rounded w-full h-9 text-black p-5" type="text" name="city" placeholder="E.g., Jaipur, New York ,Mumbai">
+
+            <button class="btn bg-blue-900 rounded w-full h-9">Search</button>
+
+            <div class="flex justify-between ">
+                <div class="before mt-4 bg-white w-36 h-0.5"></div>
+                <h class="or text-white  text-center"> or</h>
+                <div class="after mt-4 bg-white w-36 h-0.5"></div>
+            </div>
+
+
+            <button class="current bg-gray-600 rounded w-full  h-9">Use current location</button>
+        </div>
+
+        <!-- right box -->
+        
+    <div class="right text-white w-full h-auto space-y-6  flex flex-col justify-evenly    sm:w-4/5">
+
+   <div class=" bg-blue-500 h-48 p-5  w-full rounded flex  justify-between">
+    <div class="flex flex-col justify-evenly">
+        <p class="dates text-2xl font-bold  "></p>
+        <div class=" flex h-24 flex-col  text-base justify-evenly">
+         <h class="temp" ></h>
+         <h class="wind" ></h>
+         <h class="humid"></h>
+        </div>
+    </div>
+               <div class=" text-center mr-10 ">
+                <img class="image h-20 " src=" https://openweathermap.org/img/wn/10d@2x.png" >
+               <h class="climate  text-sm">Rainy</h>
+               </div>
+
+     </div>
+           
+      <h class="heading font-bold text-2xl ">5 Day Forecast</h>
+
+
+ <div class="allweather space-y-0.5   flex flex-wrap justify-between text-base">
+
+    <div class=" h-60 w-40  rounded  bg-gray-600  flex flex-col justify-between text-center py-4 ">
+                
+     <div class="box text-lg font-bold"></div>
+      <div class="pic flex justify-center "><img class="image2  h-24 w-14 "></div>
+      <h class="temp2" ></h>
+      <h class="wind2" ></h>
+      <h class="humid2"></h>
+
+     </div>
+
+   <div class="  h-60 w-40  rounded  bg-gray-600 mt-1 flex flex-col justify-between text-center py-4 ">
+                
+     <div class="box text-lg font-bold"></div>
+     <div class="pic flex justify-center "><img class="image2  h-24 w-14 "></div>
+     <h class="temp2" ></h>
+     <h class="wind2" ></h>
+     <h class="humid2"></h>
+
+    </div>
+
+      <div class="  h-60 w-40  rounded  bg-gray-600 mt-1 flex flex-col justify-between text-center py-4 ">
+                
+         <div class="box text-lg font-bold"></div>
+        <div class="pic flex justify-center "><img class="image2  h-24 w-14 "></div>
+        <h class="temp2" ></h>
+        <h class="wind2" ></h>
+        <h class="humid2"></h>
+
+        </div>
+
+     <div class="  h-60 w-40  rounded  bg-gray-600 mt-1 flex flex-col justify-between text-center py-4 ">
+                
+        <div class="box text-lg font-bold"></div>
+         <div class="pic flex justify-center "><img class="image2  h-24 w-14 "></div>
+        <h class="temp2" ></h>
+        <h class="wind2" ></h>
+        <h class="humid2"></h>
+
+    </div>
+                            
+    <div class="  h-60 w-40  rounded  bg-gray-600 mt-1 flex flex-col justify-between text-center py-4 ">
+
+     <div class="box text-lg font-bold"></div>
+     <div class="pic flex justify-center "><img class="image2  h-24 w-14 "></div>
+         <h class="temp2" ></h>
+         <h class="wind2" ></h>
+         <h class="humid2"></h>
+
+    </div>
+               
+              
+                
+
+            </div>
+           
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
